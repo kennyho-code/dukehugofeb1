@@ -19,5 +19,5 @@ phases:
       - hugo 
   post_build:
     commands:
-      - aws s3 sync --delete public s3://dukehugobucket/dukeapr23/
+      - aws s3 sync --delete public s3://dukehugobucket
       - echo Build completed on `date`
